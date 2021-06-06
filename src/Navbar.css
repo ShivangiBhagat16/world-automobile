@@ -1,0 +1,58 @@
+.Nav {
+    color: #e0432c;
+    background-color: #fff;
+    padding: 20px 0;
+}
+.Nav h1 {
+    text-align: left;
+    font-family: cursive;
+}
+.Nav h1 a {
+    color: #e0432c;
+    text-decoration: none;
+}
+.Nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 6px 0;
+}
+.Nav li {
+    display: inline-block;
+    padding:  10px;
+    font-weight: bold;
+}
+.Nav li a {
+    text-decoration: none;
+    color: #e0432c;
+    position: relative;
+}
+.Nav li a:hover {
+    color: #e0432c;
+}
+.Nav li a::after {
+	position: absolute;
+	top:100%;
+	left: 0;
+	width:100%;
+	height:1px;
+	background: #e0432c;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.Nav li a:hover::after,
+.Nav li a:focus::after {
+	height: 2px;
+	opacity: 1;
+	-webkit-transform: translateY(5px);
+	-moz-transform: translateY(5px);
+	transform: translateY(5px);
+}
+

@@ -1,0 +1,126 @@
+body {
+    background-color: #000;
+}
+.Main {
+    min-height: 600px;
+}
+.container.Cars {
+    padding: 40px 0;
+}
+.Content .ImgWrap {
+    margin-bottom: 15px;
+}
+.Content .ImgWrap img {
+    max-width: 100%;
+}
+.Content .col {
+    margin-bottom: 30px;
+}
+.Content table {
+    width: 100%;
+}
+.Content table tr  {
+    border-bottom: 1px solid #ccc;
+}
+.Content table tr th {
+    background-color:#e5432c;
+    color: #fff;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-right: 1px solid #f35f4a;
+}
+.Content table tr th:last-child {
+    border-right: 0;
+}
+.Content table tr td {
+    border-right: 1px solid #ccc;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    background-color: #e6e6e6;
+}
+.Content table tr:nth-child(even) td {
+    background-color: #fff;
+}
+.Content table tr td:last-child {
+    border-right: 0;
+}
+.SearchBar {
+    margin-bottom: 30px;
+    text-align: left;
+}
+.SearchBar label {
+    padding-right: 20px;
+    color: #fff;
+}
+.SearchBar input {
+    width: 80%;
+    padding: 7px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 18px;
+    border: 1px solid #fff;
+}
+@media only screen and (max-width: 1024px) {
+.container, .container-sm {
+    max-width: 92%;
+    padding: 0;
+}
+.Content table tr th {
+    font-size: 15px;
+    padding: 10px;
+}
+}
+@media only screen and (max-width: 767px) {
+.Nav h1 {
+    text-align: center;
+}
+.SearchBar label {
+    width: 100px;
+}
+.SearchBar input {
+    width: calc(100% - 100px);
+}
+.Nav {
+    padding-bottom: 5px;
+}
+.Main {
+    min-height: 450px;
+}
+}
+@media only screen and (max-width: 569px) {
+.Content table tr td {
+    padding: 7px;
+    font-size: 13px;
+    line-height: 17px;
+}
+}
+@media only screen and (max-width: 480px) {
+.Content table tr th {
+    font-size: 12px;
+    padding: 5px 7px;
+    line-height: 15px;
+}
+.Content table tr td {
+    font-size: 11px;
+    line-height: 14px;
+}
+.SearchBar label {
+    width: 70px;
+    font-size: 13px;
+    line-height: 17px;
+}
+.SearchBar input {
+    width: calc(100% - 70px);
+    font-size: 13px;
+    line-height: 17px;
+}
+.Main {
+    min-height: 300px;
+}
+}
